@@ -1,0 +1,59 @@
+:root {
+    --primary: #6366f1;
+    --secondary: #8b5cf6;
+    --accent: #ec4899;
+    --dark: #0f172a;
+    --darker: #020617;
+    --light: #f1f5f9;
+    --gray: #64748b;
+    --success: #10b981;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: var(--darker);
+    color: var(--light);
+    overflow-x: hidden;
+  }
+  
+  #techCanvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+  }
+  
+  .container {
+    position: relative;
+    z-index: 1;
+  }
+ /* step 1 */
+ nav {
+position: fixed;
+top: 0;
+width: 100%;
+height: 90px;
+padding: 0 6%;
+display: flex;
+justify-content: space-between;
+align-items: center;
+
+background: rgba(15, 23, 42, 0.65);
+backdrop-filter: blur(16px) saturate(160%);
+-webkit-backdrop-filter: blur(16px) saturate(160%);
+
+border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+box-shadow: 0 10px 40px rgba(0, 0, 0, 0.35);
+
+z-index: 1000;
+transition: all 0.4s ease;
+}
+
